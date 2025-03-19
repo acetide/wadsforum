@@ -1,7 +1,7 @@
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signinUserWithEmailAndPassword } from "firebase/auth";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -31,6 +31,7 @@ submit.addEventListener("click", function (event) {
 
             const user = userCredential.user
         alert("creating account")
+        window.location.href ="index.html";
         })
 
         .catch((eror) ==> {
